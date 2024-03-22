@@ -2,7 +2,33 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        task1();
+        sample1();
+    }
+    public static void sample1(){
+        Scanner sc = new Scanner(System.in);
+        String input = "";
+
+        while(!input.equals("exit")){
+            System.out.println("Hello world!");
+
+            System.out.println("Ievadiet vardu!");
+            input = sc.nextLine();
+        }
+    }
+    public static void task2() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ievadiet bazi!");
+        int baze = sc.nextInt();
+
+        System.out.println("Ievadiet kapintaju!");
+        int kapinatajs = sc.nextInt();
+
+        int result = 1;
+        for(int i = 0; i < kapinatajs; i++){
+            result = result * baze;
+        }
+        System.out.println(result);
     }
 
     public static void task1(){
