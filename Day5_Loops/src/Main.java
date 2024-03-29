@@ -2,7 +2,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        sample1();
+        task3();
+    }
+
+    public static void task3(){
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+
+        String input = "";
+
+        while(!input.toLowerCase().equals("no")){
+            System.out.println("Ievadiet skaitli!");
+            int number = sc.nextInt();
+            sum += number; // sum = sum + number;
+
+            System.out.println("Vai gribat turpināt darbu?");
+            input = sc.next();
+        }
+
+        System.out.println("Summa ir " + sum);
     }
     public static void sample1(){
         Scanner sc = new Scanner(System.in);
