@@ -1,12 +1,29 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        sample1();
+        task2();
     }
 
+    public static void task2(){
+        Scanner sc = new Scanner(System.in);
+        double[] m = new double[10];
+
+        for(int i = 0; i < m.length; i++){
+            System.out.println("Ievadiet skaitli!");
+            m[i] = sc.nextDouble();
+        }
+        //System.out.println(Arrays.stream(m).average().getAsDouble());
+        double sum = 0;
+        for(int i = 0; i < m.length; i++){
+            sum = sum + m[i];
+        }
+
+        System.out.println(sum / m.length);
+    }
     public static void sample1(){
         int garums = 6;
         int[] m = new int[garums];
