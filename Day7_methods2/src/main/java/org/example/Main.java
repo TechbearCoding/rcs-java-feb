@@ -3,9 +3,64 @@ package org.example;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int result = task2();
+        //System.out.println(homework("abababaAAAaxcccc"));
 
-        System.out.println(result);
+        boolean c = homework2("abababaAAAaxcccc");
+        System.out.println(c);
+        if(c){
+
+        }
+
+        if(c == true){ //if(c)
+
+        }
+
+        if(c != true){
+
+        }
+
+        if(!c){
+
+        }
+
+        sample3("abababaAAAaxcccc");
+
+        int b = sample4();
+        System.out.println(b);
+
+    }
+
+    public static boolean homework2(String a){
+        if(a.toLowerCase().contains("aaa")){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public static int homework(String a){
+        if(a.toLowerCase().contains("aaa")){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
+    public static int sample4(){
+        String a = "abababaAAAaxcccc";
+        if(a.toLowerCase().contains("aaa")){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
+    public static void sample3(String a){
+        if(a.toLowerCase().contains("aaa")){
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
     }
 
     public static int task2(){
