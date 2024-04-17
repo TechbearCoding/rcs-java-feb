@@ -1,11 +1,55 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        task2();
+        homework2();
+    }
+
+    public static void homework2(){
+        int[] numbers = new int[10];
+        int max = Integer.MIN_VALUE;
+        Random r = new Random();
+
+        for(int i = 0; i < numbers.length; i++){
+            //numbers[i] = r.nextInt((99-1+1)+1);
+            numbers[i] = r.nextInt(100);
+            if (max < numbers[i]) {
+                max = numbers[i];
+            }
+            System.out.print(numbers[i] + " ");
+        }
+        System.out.println("\nLielākais skaitlis ir " + max);
+    }
+
+    public static void homework1(){
+        Scanner sc = new Scanner(System.in);
+        int len = 0;
+
+        while(len < 2){
+            System.out.println("Ievadiet masīva garumu!");
+            len = sc.nextInt();
+        }
+
+        int[] numbers = new int[len];
+        int sum = 0;
+        int max = Integer.MIN_VALUE;
+
+        for(int i = 0; i < len; i++){
+            System.out.println("Ievadiet skaitli!");
+            numbers[i] = sc.nextInt();
+
+            sum += numbers[i];
+            if (max < numbers[i]) {
+                max = numbers[i];
+            }
+        }
+
+        System.out.println("Max-" + max);
+        System.out.println("Summa- " + sum);
     }
 
     public static void task2(){
@@ -60,4 +104,6 @@ public class Main {
 
         return false;
     }
+
+
 }
