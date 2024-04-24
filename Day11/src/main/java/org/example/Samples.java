@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Samples {
     public static int a = 3;
     private static int b = 4;
@@ -15,5 +18,13 @@ public class Samples {
 
     public static int sum(int a, int b){
         return a + b;
+    }
+
+    public static List<Integer> getList(){
+        List<Integer> a = new ArrayList<>();
+
+        //...
+
+        return a;
     }
 }
